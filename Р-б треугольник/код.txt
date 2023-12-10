@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int n=0,p,z;
+while ((n<3) or (n%2==0))
+{cin>>n;}
+p=(n+1)/2-1;
+z=1;
+for (int i=1;i<=(n+1)/2;i++)
+{
+    cout<<endl;
+    for (int j=1;j<=p;j++)
+    {
+        cout<<' ';}
+    p=p-1;
+    for (int j=1;j<=z;j++)
+    {
+        cout<<'*';
+    }
+    z=z+2;
+}
+
+    return 0;
+}
